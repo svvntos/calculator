@@ -20,6 +20,14 @@ function addDecimal() {
 }
 function useOperator(operator) {
     const currentValue = Number(calculatorDisplay.textContent);
+    // assign firstValue if no value
+    if (!firstValue) {
+        firstValue = currentValue;
+    }
+    operatorValue = operator;
+    console.log('firstValue', firstValue);
+    console.log('operator', operatorValue);
+
     
 }
 
